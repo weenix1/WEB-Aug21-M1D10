@@ -65,3 +65,7 @@ p {
 .hideContent {
   display: none;
 }
+
+footer {
+  text-align: center;
+}

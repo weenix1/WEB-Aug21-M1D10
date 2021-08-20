@@ -143,3 +143,82 @@ DOM
 
 writeHeader("Exercise31");
 /* 31) Get element with ID "container" from the page */
+document.getElementById("title");
+
+writeHeader("Exercise32");
+/* 32) Get every "td" from the page */
+document.querySelectorAll("td");
+
+writeHeader("Exercise33");
+/* 33) Create a cycle that prints the text inside every td of the page */
+
+writeHeader("Exercise34");
+/* 34) Write a function to change the heading of the page */
+function changeHeader(newheading) {
+  let newHeading = document.getElementById("title");
+  newHeading.innerText = newheading;
+}
+
+writeHeader("Exercise35");
+/*35) Write a function to add an extra row to the table  */
+function extraTableRow(newRow) {
+  let tableRow = document.querySelector("tr");
+  let addNewTableRow = document.createElement("tr");
+  addNewTableRow.innerHTML = newRow;
+  tableRow.appendChild(addNewTableRow);
+}
+
+writeHeader("Exercise36");
+/* 36) Write a function to add the class "test" to each row in the table */
+function AddNewClass() {
+  let row = document.querySelector("tr");
+  row.classList.add("test");
+}
+
+writeHeader("Exercise37");
+/* 37) Write a function to add a red background to every link in the page */
+function addLinkBackgroundColor() {
+  let linkBgColor = document.querySelector("link");
+  linkBgColor.style.backgroundColor = "red";
+}
+
+writeHeader("Exercise38");
+/* 38) Console log "Page loaded" when the page is correctly loaded */
+
+writeHeader("Exercise39");
+/* 39) Write a function to add new items to a UL */
+function addNewItems() {
+  let li = document.querySelector("ul > li");
+  let newItem = document.createElement("li");
+  newItem.innerHTML = "exercises for now";
+  li[0].appendChild(newItem);
+}
+
+writeHeader("Exercise40");
+/* 40) Write a function to empty a list  */
+function emptyList() {
+  let list = document.querySelector("ul");
+  list.remove();
+}
+
+/* EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change a single TD background color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over it
+        49) Write a function to add a table with 4 rows and 3 columns programmatically
+        50) Write a function to remove the table from the page
+    --> */
+
+writeHeader("Exercise40");
+/*  41) Add an eventListener to alert when the mouse is over a link, displaying the URL */
+let listen = document.getElementsByTagName("link");
+
+listen.addEventListener("mouseover", function (event) {
+  alert("mouse over test!"), false;
+});
