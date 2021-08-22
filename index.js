@@ -185,6 +185,10 @@ function addLinkBackgroundColor() {
 writeHeader("Exercise38");
 /* 38) Console log "Page loaded" when the page is correctly loaded */
 
+window.onload = () => {
+  console.log("page loaded");
+};
+
 writeHeader("Exercise39");
 /* 39) Write a function to add new items to a UL */
 function addNewItems() {
@@ -215,7 +219,7 @@ function emptyList() {
         50) Write a function to remove the table from the page
     --> */
 
-writeHeader("Exercise40");
+writeHeader("Exercise41");
 /*  41) Add an eventListener to alert when the mouse is over a link, displaying the URL */
 let listen = document.getElementsByTagName("link");
 
